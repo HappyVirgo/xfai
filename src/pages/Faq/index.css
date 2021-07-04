@@ -1,0 +1,16 @@
+.chakra-accordion__item{
+    border-color: #333333 !important;
+}
+.faq-title button{
+    padding-left: 20px;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+}
+.faq-sep{
+    border-color: #333333;
+    margin: 15px 0 20px;
+}
+
+.acc-item.expanded{
+     background: #1A1A1A 0% 0% no-repeat padding-box;
+ }

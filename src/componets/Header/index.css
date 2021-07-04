@@ -1,0 +1,571 @@
+/** top border bg **/
+.top-border {
+    height: 9px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/** Animation of navigation bar on scrolling
+------------------------------------------------  */
+.nav-wrap {
+    height: 50px;
+    position: fixed;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    background: black;
+    z-index: 1;
+}
+
+.nav-inner {
+    height: 50px;
+}
+
+.nav-wrap img.logo {
+    height: 40px;
+}
+
+.menu-item-balance {
+    padding: 10px 20px;
+}
+
+.menu-item-balance {
+    overflow: visible !important;
+}
+
+.sidebar-left-nav {
+    left: -100%;
+    position: relative;
+    visibility: visible;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sidebar-left-nav.is-active {
+    left: 0;
+    visibility: visible;
+}
+
+.sidebar-left-nav .nav-btn-wrap {
+    height: 50px;
+}
+
+
+.btn-wallet, .nav-btn-wrap > div {
+    width: 170px;
+    height: 39px;
+}
+
+/** hamburger Update
+=======================================================================  */
+.hamburger {
+    line-height: 24px;
+    margin-left: 20px;
+}
+
+.hamburger button {
+    position: relative;
+    z-index: 3;
+    font-size: 24px;
+    font-weight: bolder;
+    min-width: 24px;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    background: none;
+}
+
+.hamburger button:hover, .hamburger button:focus, .hamburger button:active {
+    background: none;
+    box-shadow: none;
+}
+
+.hamburger:hover button {
+    opacity: 0.7;
+}
+
+/** Hamburger hack **/
+.sidebar-left-nav > div {
+    padding-top: 22px;
+    height: 100%;
+}
+
+.sidebar-left-nav .menu-items {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.sidebar-left-nav .menu-item {
+    text-align: center;
+}
+
+.sidebar-left-nav .icons-wrap {
+    padding: 30px 20px 30px 20px;
+    margin: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+@media (min-height: 600px) {
+    .sidebar-left-nav .icons-wrap {
+        justify-content: center;
+    }
+}
+
+
+.sidebar-left-nav .icons-wrap .menu-item {
+    margin: 15px 0;
+}
+
+.sidebar-left-nav .icons-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-left-nav .icons-wrap::-webkit-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+}
+
+.sidebar-left-nav .hamburger {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    opacity: 0;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-left-nav .hamburger.is-active {
+    opacity: 1;
+    transition: all 2s ease 0s;
+}
+
+
+.nap-wrap .background {
+    margin-top: 100px;
+}
+
+/* Styled Button */
+.sb {
+    font-size: 16px;
+}
+
+/** Top Navigation menu & sidebar items
+=======================================================================  */
+.nav-wrap .menu-item.Whitepaper, .nav-wrap .menu-item.lqd, .nav-wrap .menu-item.FAQ1 {
+    margin-left: 43px;
+}
+
+.nav-wrap .menu-item.icon {
+    margin-left: 20px;
+}
+
+.nav-wrap .menu-item.Telegram {
+    margin-left: 50px !important;
+}
+
+.menu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-item.Twitter img {
+    width: 25px;
+}
+
+.menu-item.Medium img {
+    width: 25px;
+}
+
+.sidebar-left-nav .menu-item a {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.nav-wrap .menu-items
+.menu-item:first-child {
+    margin-left: 0;
+}
+
+.nav-inner button.hamburger {
+    display: block;
+}
+
+.nav-inner [class^="menu-item"] {
+    display: none;
+}
+
+.nav-inner .menu-item-balance, .nav-inner .menu-item-wallet {
+    display: none;
+}
+
+.nav-btn-wrap {
+    margin-left: auto;
+}
+
+.menu-item-wallet .desc {
+    display: none;
+}
+
+.sidebar-left-nav .menu-item-balance,
+.sidebar-left-nav .menu-item-wallet {
+    max-width: 220px;
+    width: initial;
+    padding: 5px 20px;
+    height: 30px;
+}
+
+
+/** Global loading dialog **/
+.dlg-loading {
+    height: 300px !important;
+    border: none !important;
+    background: none !important;
+}
+
+
+/** Responsive
+=======================================================================  */
+@media only screen {
+    .nap-wrap.aos-animate .background {
+        margin-top: 0px;
+    }
+    .container-wrap {
+        margin: 0 20px;
+    }
+}
+
+@media (min-width: 360px) {
+    .nav-inner .menu-item-wallet,
+    .nav-inner .menu-item-balance {
+        height: 30px;
+    }
+
+    .nav-inner .menu-item-wallet {
+        display: flex;
+    }
+
+    .sidebar-left-nav .menu-item-wallet {
+        display: none;
+    }
+
+    .top-heading {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .nav-sep {
+        display: none;
+        transition: all 0.3s ease-in-out;
+        width: 1px;
+        border-right: 1px solid #333333;
+        height: 28px;
+    }
+    
+    .container-wrap {
+        margin: 0 50px;
+    }
+}
+
+@media (min-width: 468px) {
+    .background {
+        padding-top: 64px !important;
+    }
+
+    .dlg-content {
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 568px) {
+    .nav-btn-wrap {
+        margin-left: auto;
+    }
+
+    .nav-inner .menu-item-balance {
+        display: flex;
+    }
+
+    .sidebar-left-nav .menu-item-balance {
+        display: none;
+    }
+
+    .sidebar-left-nav .menu-item a {
+        font-size: 37px;
+        line-height: 40px;
+    }
+}
+
+
+@media (min-width: 668px) {
+    .background {
+        padding-top: 73px !important;
+    }
+
+    .top-heading {
+        font-size: 50px;
+        margin-bottom: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .background {
+        padding-top: 63px !important;
+    }
+    .container-wrap {
+        margin: 0 70px;
+    }
+}
+
+@media (min-width: 820px) {
+    .top-heading {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 920px) {
+    .background {
+        padding-top: 61px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    /** Show  wallet **/
+    .nav-inner .nav-btn-wrap {
+        display: flex;
+    }
+
+    .nav-inner .h-stack > * {
+        margin-right: 2rem;
+    }
+
+    @media only screen {
+        .nav-wrap.aos-animate, .nav-wrap.aos-animate .nav-inner {
+            height: 50px;
+        }
+
+        .nav-wrap.aos-animate img.logo {
+            height: 40px;
+        }
+
+        .nav-wrap.aos-animate .h-stack > * {
+            margin-right: 1rem;
+        }
+
+        .nav-wrap.aos-animate .nav-btn-wrap > div {
+            height: 30px;
+        }
+
+        .nav-wrap.aos-animate button {
+            height: 35px !important;
+            width: 24px;
+        }
+    }
+}
+
+
+@media (min-width: 1020px) {
+
+}
+
+@media (min-width: 1120px) {
+
+}
+
+@media (min-width: 1220px) {
+
+}
+
+@media (min-width: 1320px) {
+
+}
+
+@media (min-width: 1420px) {
+    .background {
+        margin-top: 108px !important;
+    }
+
+    .nav-wrap, .nav-inner {
+        height: 99px;
+    }
+
+    .nav-wrap img.logo {
+        height: 80px;
+    }
+
+    .nav-wrap .nav-btn-wrap > div {
+        height: 40px;
+    }
+
+    .nav-wrap.aos-animate .nav-btn-wrap > div {
+        height: 30px;
+    }
+
+    .nav-inner [class^="menu-item"] {
+        display: flex;
+    }
+
+    .nav-inner .hamburger {
+        display: none;
+    }
+
+    .sidebar-left-nav {
+        visibility: hidden !important;
+        opacity: 0;
+        -webkit-transition: visibility 0s 0.6s, opacity 0.6s linear;
+        -moz-transition: visibility 0s 0.6s, opacity 0.6s linear;
+        -ms-transition: visibility 0s 0.6s, opacity 0.6s linear;
+        -o-transition: visibility 0s 0.6s, opacity 0.6s linear;
+    }
+
+    .nav-wrap .menu-item-wallet, .sidebar-left-nav .menu-item-wallet {
+        width: 230px !important;
+    }
+
+    .menu-item-wallet span.desc {
+        display: inline;
+    }
+
+    .nav-wrap .menu-item.Whitepaper,
+    .nav-wrap .menu-item.lqd,
+    .nav-wrap .menu-item.FAQ1
+    {
+        color: white;
+        font-family: "EuclidCircularA";
+        font-weight: 600;
+        line-height: 19px;
+        position: relative;
+    }
+
+    .nav-wrap .menu-item.Whitepaper::before,
+    .nav-wrap .menu-item.lqd::before,
+    .nav-wrap .menu-item.FAQ1::before
+    {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .nav-wrap .menu-item.Whitepaper:hover,
+    .nav-wrap .menu-item.lqd:hover,
+    .nav-wrap .menu-item.FAQ1:hover
+    {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    .nav-wrap .menu-item.Whitepaper:hover::before,
+    .nav-wrap .menu-item.lqd:hover::before,
+    .nav-wrap .menu-item.FAQ1:hover::before
+    {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    .nav-wrap.aos-animate .menu-item.Whitepaper,
+    .nav-wrap.aos-animate .menu-item.lqd,
+    .nav-wrap.aos-animate .menu-item.FAQ1
+    {
+        line-height: 21px;
+    }
+
+    /** lqd **/
+    .lqd a {
+        animation-name: lqd_anim;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @-webkit-keyframes lqd_anim {
+        from {
+            color: white;
+        }
+
+        to {
+            color: #FC307B;
+        }
+    }
+
+    @-moz-keyframes lqd_anim {
+        from {
+            color: white;
+        }
+
+        to {
+            color: #FC307B;
+        }
+    }
+
+    @-ms-keyframes lqd_anim {
+        from {
+            color: white;
+        }
+
+        to {
+            color: #FC307B;
+        }
+    }
+
+    @-o-keyframes lqd_anim {
+        from {
+            color: white;
+        }
+
+        to {
+            color: #FC307B;
+        }
+    }
+
+    @keyframes lqd_anim {
+        from {
+            color: white;
+        }
+
+        to {
+            color: #FC307B;
+        }
+    }
+
+    /* horizontal sep */
+    .nav-sep {
+        height: 43px;
+        display: inline-block;
+    }
+
+    .nav-wrap.aos-animate .nav-sep {
+        height: 28px;
+    }
+}

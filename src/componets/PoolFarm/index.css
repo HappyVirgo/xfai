@@ -1,0 +1,239 @@
+.box-pool {
+    min-width: 280px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0px 8px 32px;
+}
+
+.box-pool.hide{
+    display: none;
+}
+
+/** styled buttons in pool-box */
+.container-wrap .pool-box-row{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.container-wrap .pool-box-row > div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pool-box-row .box-pool {
+    align-self: stretch;
+}
+.pool-box-row .box-pool.pool {
+    align-self: flex-start;
+}
+
+.box-pool .sb{
+    font-size: 22px;
+}
+
+.pool-detail .tt{
+    margin-inline-start: 5px;
+    align-self: flex-start;
+}
+
+.box-pool .row-staked {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.box-pool .row-staked > div {
+    margin-bottom: 20px;
+}
+
+.box-pool .row-staked .staked{
+    min-width: 50%;
+    margin-right: 20px;
+}
+.box-pool .row-staked .xfit{
+    min-width: calc(33.333% - 10px);
+}
+
+
+
+/** Pool box Styling **/
+.box-tvl{
+    font-size: 18px;
+}
+.box-title{
+    font-size: 16px;
+}
+.box-value{
+    font-size: 30px;
+}
+.box-value-desc{
+    font-size: 15px;
+}
+.box-value-wallet{
+    font-size: 13px;
+}
+.heading-apr-wrap{
+    padding: 10px 40px;
+}
+.heading-apr{
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+
+
+@media (min-width: 360px) {
+    .box-pool{
+        width: 100%;
+        max-width: 100%;
+    }
+    .box-value{
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 468px) {
+    .box-tvl{
+        font-size: 20px;
+    }
+    .box-value{
+        font-size: 26px;
+    }
+}
+@media (min-width: 568px) {
+    .box-tvl{
+        font-size: 18px;
+    }
+    .box-value{
+        font-size: 30px;
+    }
+
+}
+@media (min-width: 668px) {
+    .box-tvl{
+        font-size: 18px;
+    }
+    .box-value{
+        font-size: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .container-wrap .container-fluid{
+        margin: 0 -25px;
+    }
+    .container-wrap .pool-box-row {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+    .container-wrap .pool-box-row > div{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .box-pool{
+        width: calc(50% - 50px);
+        max-width: calc(50% - 50px);
+    }
+
+
+    /** Pool box Styling **/
+    .box-value{
+        font-size: 34px;
+    }
+    .heading-apr{
+        font-size: 23px;
+    }
+}
+@media (min-width: 768px) and (max-width: 780px) {
+    .box-pool .add-to-farm-desc{
+        letter-spacing: -0.7px;
+    }
+}
+@media (min-width: 820px) {
+    /** Pool box Styling **/
+    .box-value{
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 920px) {
+    /** Pool box Styling **/
+    .box-value{
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 994px) {
+
+}
+
+@media (min-width: 1020px) {
+    .box-value{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .mod3 .box-pool{
+        width: calc(33.3333% - 50px);
+        max-width: calc(33.3333% - 50px);
+    }
+    
+    .box-value{
+        font-size: 30px;
+    }
+}
+
+/** specific css **/
+@media (min-width: 1120px) and (max-width: 1260px) {
+    .box-pool .sb{
+        font-size: 18px;
+    }
+}
+
+
+
+@media (min-width: 1220px) {
+}
+
+
+@media (min-width: 1320px) {
+}
+
+@media (min-width: 1420px) {
+
+}
+
+
+/** specific css **/
+@media (min-width: 360px) and (max-width: 400px)
+{
+    .box-pool .pool-box-detail, .box-pool .pool-box-detail p{
+        font-size: 12px !important;
+    }
+    .box-pool .pool-box-detail .values span{
+        font-size: 10px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 870px)
+{
+    .box-pool .pool-box-detail, .box-pool .pool-box-detail p{
+        font-size: 12px !important;
+    }
+    .box-pool .pool-box-detail .values span{
+        font-size: 10px !important;
+    }
+}
+@media (min-width: 1120px) and (max-width: 1279px)
+{
+    .box-pool .pool-box-detail, .box-pool .pool-box-detail p{
+        font-size: 12px !important;
+    }
+    .box-pool .pool-box-detail .values span{
+        font-size: 10px !important;
+    }
+}
+
+@media (min-width: 1120px) and (max-width: 1330px){
+    .harvest-success-title, .harvest-only-success-title{
+        font-size: 24px !important;
+    }
+}
+
+

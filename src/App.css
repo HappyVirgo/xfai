@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "EuclidCircularA";
+  font-weight: 300;
+  src: local("EuclidCircularA"),
+    url(./assets/fonts/EuclidCircularA-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EuclidCircularA";
+  font-weight: 400;
+  src: local("EuclidCircularA"),
+    url(./assets/fonts/EuclidCircularA-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EuclidCircularA";
+  font-weight: 500;
+  src: local("EuclidCircularA"),
+    url(./assets/fonts/EuclidCircularA-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EuclidCircularA";
+  font-weight: 600;
+  src: local("EuclidCircularA"),
+    url(./assets/fonts/EuclidCircularA-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "EuclidCircularA";
+  font-weight: 900;
+  src: local("EuclidCircularA"),
+    url(./assets/fonts/EuclidCircularA-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gobold";
+  src: local("Gobold"), url(./assets/fonts/Gobold.ttf) format("truetype");
+}
+
+.background {
+  left: 0px;
+  width: 100%;
+  margin-top: 59px;
+  padding-top: 25px;
+}
+.background:after{
+  content: ' ';
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 120px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index:-1;
+  background: url('./assets/images/back.png') repeat-x, -webkit-gradient(linear, left top, left bottom, from(#212121), color-stop(70%, #000000));
+  background: url('./assets/images/back.png') repeat-x, -o-linear-gradient(top, #212121 0%, #000000 70%);
+  background: url('./assets/images/back.png') repeat-x, linear-gradient(to bottom, #212121 0%, #000000 70%);
+}
+.btn {
+  background: transparent linear-gradient(103deg, #fc307b 0%, #a22dc9 100%) 0%
+    0% no-repeat padding-box !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+}
+
+.btn:hover {
+  background: #a22dc9 0% 0% no-repeat padding-box !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+}
+
+.btn-alt {
+  background: transparent linear-gradient(112deg, #5fd9dd 0%, #2c92ef 100%) 0%
+    0% no-repeat padding-box !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+}
+
+.btn-alt:hover {
+  background: #2c92ef 0% 0% no-repeat padding-box !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+}
+
+.slider-thumb {
+  background: transparent linear-gradient(141deg, #5fd9dd 0%, #2c92ef 100%) 0%
+    0% no-repeat padding-box !important;
+}
+
+
+/** Global Tooltip */
+.chakra-portal .chakra-popover__content {
+  text-transform: none;
+  font-family: EuclidCircularA;
+  font-size: 16px;
+  border: 2px solid #262626;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .chakra-portal .chakra-popover__content {
+    border-radius: 0;
+  }
+}
+
+.chakra-portal .chakra-popover__content:focus{
+   box-shadow: none;
+ }
+
+.chakra-portal .chakra-popover__arrow
+{
+  /* background: black !important; */
+  /* box-shadow: -2px -2px 2px 0 #262626 !important; */
+  box-shadow: unset !important;
+}
+.chakra-portal .chakra-popover__arrow-positioner
+{
+  /*background: black !important;*/
+  /*box-shadow: 2px 2px 2px 0 #262626 !important;*/
+}
+
+.chakra-portal [data-popper-placement="bottom"] .chakra-popover__arrow
+{
+  /*box-shadow: -2px -2px 2px 0 #262626 !important;*/
+}
+
+.chakra-portal [data-popper-placement="bottom"] .chakra-popover__arrow-positioner
+{
+  /*box-shadow: -2px -2px 2px 0 #262626 !important;*/
+}
+
+.chakra-portal .chakra-popover__body{
+  padding: 60px 34px 31px 34px;
+}
+
+.chakra-portal .chakra-popover__content button{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* tooltip & Max amount transition */
+.tns-blue,.tt{
+  color: #5FD9DD;
+}
+
+.tns-blue p,
+.tns-blue svg,
+.tt p,
+.tt svg
+{
+  color: #5FD9DD;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.tns-blue:hover p,
+.tns-blue:hover svg,
+.tt:hover p,
+.tt:hover svg
+{
+  color: #2C92EF !important;
+}
+
+/** Modal */
+.chakra-portal .dlg-connect,
+.chakra-portal .dlg-tos{
+  max-height: 569px;
+}
+
+.wrap-modal-body {
+  height: 375px;
+  background: #1a1a1a;
+  padding: 10px 10px 10px 0px;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  width: 10px;
+  height: 50px;
+  background: #444444;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+  border-radius: 9999px;
+}
+
+.modal-body {
+    height: 100%;
+    padding-top: 0;
+}
+
+.btn-close {
+  margin-top: 10px !important;
+  margin-right: 5px !important;
+}
+
+.learn-more:hover {
+  color: #2C92EF !important
+}
+
+@media (max-width: 425px) {
+  .chakra-portal .chakra-modal__content-container{
+    border: 0;
+    align-items: unset;
+  }
+  .chakra-portal .chakra-modal__content{
+    border: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 425px) {
+  .chakra-portal .chakra-modal__content{
+    border-radius: 20px;
+  }
+}
+
+@media (max-height: 360px) {
+  .chakra-portal .dlg-tos .chakra-modal__header{
+    margin-top: 30px;
+  }
+}
+@media (max-height: 630px) {
+  .chakra-portal .chakra-modal__content{
+    max-height: calc(100% - 30px);
+  }
+}
+
+
+

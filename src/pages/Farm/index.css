@@ -1,0 +1,32 @@
+.container-wrap .container-fluid {
+    padding: 0;
+}
+
+@media (min-width: 1020px) {
+    .container-wrap.mod2 > div.pool-box-wrap{
+        width: 862px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container-wrap.mod3 > div.pool-box-wrap{
+        min-width: 1122px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1420px) {
+    .container-wrap.mod3 > div.pool-box-wrap{
+        width: 1262px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.box-detail-rewards p{
+    flex: 0;
+}
+
