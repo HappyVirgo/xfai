@@ -29,14 +29,13 @@ import TermsOfServiceModal from "./TermsOfServiceModal";
 import styled from 'styled-components';
 
 import { ModalOverlayProps } from "./LoadingPoolData";
-import { MSG_CONNECT_REQUIRED_DESKTOP, MSG_CONNECT_REQUIRED_CHROME, MSG_CONNECT_REQUIRED_MOBILE, MSG_CONNECT_WALLET, MSG_SELECT_KOVAN_NET, MSG_SELECT_MAIN_NET } from "../xfai/lang";
+import { MSG_CONNECT_REQUIRED_DESKTOP, MSG_CONNECT_REQUIRED_MOBILE, MSG_CONNECT_WALLET, MSG_SELECT_KOVAN_NET, MSG_SELECT_MAIN_NET } from "../xfai/lang";
 
 import {
   BrowserView,
   MobileView,
   isBrowser,
   isMobile,
-  isChrome
 } from "react-device-detect";
 import { doLogin, isLoggedIn } from "../xfai/AuthUtil";
 
@@ -164,7 +163,7 @@ export const ConnectWalletModal = ({
     // const isNetworkIdValid = curNetworkId && curNetworkId == networkId;
     const netId = `${await window.web3?.eth?.net.getId()}`;
     if (!netId) {
-      setErrorMsg(isMobile ? MSG_CONNECT_REQUIRED_MOBILE : (isChrome? MSG_CONNECT_REQUIRED_DESKTOP:MSG_CONNECT_REQUIRED_CHROME));
+      setErrorMsg(isMobile ? MSG_CONNECT_REQUIRED_MOBILE : MSG_CONNECT_REQUIRED_DESKTOP);
     } else {
       if (netId != networkId) {
         if (networkId == "1")
