@@ -162,8 +162,7 @@ export const ConnectWalletModal = ({
     // We show the errors below a wallet horizontal box.
     // const isNetworkIdValid = curNetworkId && curNetworkId == networkId;
     const netId = `${await window.web3?.eth?.net.getId()}`;
-    console.log("netID", netId)
-    if (!netId) {
+    if (netId === 'undefined') {
       setErrorMsg(isMobile ? MSG_CONNECT_REQUIRED_MOBILE : MSG_CONNECT_REQUIRED_DESKTOP);
     } else {
       if (netId != networkId) {
